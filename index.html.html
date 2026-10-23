@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestión Integral Empresarial</title>
+<style>
+/* Estilos generales y colores corporativos */
+:root{--azul:#12304a;--turquesa:#16a6a1;--claro:#f3f8fa;--texto:#253746;--blanco:#fff}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--texto);line-height:1.6;background:var(--blanco)}
+header{background:var(--azul);color:white;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.logo{font-size:1.15rem;font-weight:700}.logo span{color:#62e0d4}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-weight:600}nav a:hover,nav a:focus{color:#62e0d4;text-decoration:underline}
+.hero{padding:78px 6%;background:linear-gradient(120deg,#12304a,#1b6573);color:white}
+.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:#8ff0e3;text-transform:uppercase;font-size:.85rem;font-weight:bold;letter-spacing:1.5px}
+h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.12;margin:12px 0} .hero p{font-size:1.1rem;max-width:650px}
+.btn{display:inline-block;background:var(--turquesa);color:#062d3c;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:12px}.btn:hover{filter:brightness(1.08)}
+section{padding:58px 6%}.container{max-width:1100px;margin:auto}.section-title{text-align:center;color:var(--azul);font-size:2rem;margin:0 0 12px}.intro{text-align:center;max-width:720px;margin:0 auto 30px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:white;border:1px solid #dce8ed;border-radius:14px;padding:24px;box-shadow:0 6px 18px rgba(18,48,74,.07)}.card .icon{font-size:2rem}.card h3{color:var(--azul);margin:10px 0}.soft{background:var(--claro)}
+.benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.benefit{padding:18px;border-left:4px solid var(--turquesa);background:white;border-radius:6px}
+.faq details{background:white;border:1px solid #dce8ed;border-radius:8px;padding:16px 18px;margin:12px 0}.faq summary{font-weight:bold;color:var(--azul);cursor:pointer}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-panel{background:var(--claro);padding:24px;border-radius:12px}.contact-panel a{color:#087c7a}.notice{font-size:.9rem;color:#526674;background:#e7f4f4;padding:12px;border-radius:8px}
+footer{background:var(--azul);color:white;padding:25px 6%;text-align:center}footer p{margin:5px}
+@media(max-width:760px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{padding:55px 6%}.cards,.benefits,.contact-grid{grid-template-columns:1fr}section{padding:42px 6%}.card{padding:20px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Gestión <span>Integral</span> Empresarial</div>
+  <nav aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#faq">Preguntas frecuentes</a><a href="#contacto">Contacto</a>
+  </nav>
+</header>
+<main>
+<section class="hero" id="inicio"><div class="hero-inner">
+  <div class="eyebrow">Organización · Confianza · Soluciones</div>
+  <h1>Tu aliado para una gestión administrativa más sencilla</h1>
+  <p>Apoyamos a emprendedores y pequeñas empresas con soluciones prácticas para organizar sus procesos, documentos y tareas del día a día.</p>
+  <a class="btn" href="#contacto">Solicitar información</a>
+</div></section>
+<section id="nosotros"><div class="container">
+  <h2 class="section-title">¿Quiénes somos?</h2>
+  <p class="intro">Gestión Integral Empresarial es una empresa ficticia creada para esta actividad académica. Nuestro propósito es facilitar el trabajo administrativo mediante organización, acompañamiento y atención clara.</p>
+</div></section>
+<section class="soft" id="servicios"><div class="container">
+  <h2 class="section-title">Nuestros servicios</h2><p class="intro">Soluciones flexibles para las necesidades de tu negocio.</p>
+  <div class="cards">
+    <article class="card"><div class="icon" aria-hidden="true">📁</div><h3>Organización documental</h3><p>Clasificación y organización de archivos para facilitar su consulta y conservación.</p></article>
+    <article class="card"><div class="icon" aria-hidden="true">📊</div><h3>Informes administrativos</h3><p>Apoyo en la preparación de informes, registros y formatos de seguimiento.</p></article>
+    <article class="card"><div class="icon" aria-hidden="true">🤝</div><h3>Asistencia empresarial</h3><p>Acompañamiento en tareas administrativas y mejora de procesos cotidianos.</p></article>
+  </div>
+</div></section>
+<section><div class="container"><h2 class="section-title">¿Por qué elegirnos?</h2>
+  <div class="benefits"><div class="benefit"><strong>Atención cercana</strong><br>Escuchamos las necesidades de cada cliente.</div><div class="benefit"><strong>Orden y claridad</strong><br>Promovemos procesos fáciles de entender y consultar.</div><div class="benefit"><strong>Soluciones prácticas</strong><br>Buscamos ahorrar tiempo y mejorar la organización.</div></div>
+</div></section>
+<section class="soft faq" id="faq"><div class="container"><h2 class="section-title">Preguntas frecuentes</h2>
+  <details><summary>¿A quiénes van dirigidos los servicios?</summary><p>A emprendedores, comerciantes y pequeñas empresas que necesitan apoyo administrativo.</p></details>
+  <details><summary>¿Qué tipo de documentos pueden organizar?</summary><p>Podemos apoyar en la clasificación de documentos administrativos, registros y archivos de oficina.</p></details>
+  <details><summary>¿Puedo solicitar apoyo para elaborar informes?</summary><p>Sí. La empresa ofrece apoyo demostrativo en la preparación y organización de informes administrativos.</p></details>
+  <details><summary>¿Cómo puedo solicitar información?</summary><p>Puedes utilizar los canales de atención demostrativos que aparecen en la sección de contacto.</p></details>
+  <details><summary>¿Cuál es el horario de atención?</summary><p>Horario propuesto para el ejercicio: lunes a viernes, de 8:00 a. m. a 5:00 p. m.</p></details>
+</div></section>
+<section id="contacto"><div class="container"><h2 class="section-title">Contáctanos</h2><p class="intro">Estamos listos para conocer las necesidades de tu negocio.</p>
+  <div class="contact-grid"><div class="contact-panel"><h3>Canales de atención</h3><p><strong>Correo:</strong> contacto@gestionintegral.example</p><p><strong>Teléfono:</strong> (000) 000 0000</p><p><strong>Horario:</strong> lunes a viernes, 8:00 a. m. – 5:00 p. m.</p><p><strong>Atención:</strong> información general y orientación administrativa.</p></div>
+  <div class="contact-panel"><h3>Solicita información</h3><p>Para conocer nuestros servicios, prepara tu consulta y comunícala por un canal de atención real que tu organización habilite.</p><p class="notice">Esta página es un prototipo académico. Los datos de contacto son ficticios y no existe un sistema conectado para recibir mensajes.</p></div></div>
+</div></section>
+</main>
+<footer><p><strong>Gestión Integral Empresarial</strong></p><p>Actividad académica: creación de página web con apoyo de Inteligencia Artificial.</p><p>© 2026 · Sitio demostrativo</p></footer>
+</body>
+</html>
